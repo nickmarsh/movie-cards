@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+img, object, embed, video {max-width:100%}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {width:100%}
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {margin-left:auto;margin-right:auto;width:87.36%;padding-left:1.82%;padding-right:1.82%;padding-top:1.82%}
+#m-layout {clear:both;float:left;margin-left:0;width:100%;display:block}
+.m-container {background-color:#fff;float:left;width:auto;height:auto;margin-left:15px}
+.m-image {float:left;height:auto;width:auto;padding:1.8%;margin-bottom:10px;border:2px solid #e8e8e8;}
+.m-title {color:#1c79b5;font-size:2em;text-align:center;margin-top:10px;margin-bottom:10px}
+.m-caption {font-weight:700;padding-top:10px}
+.a-list {border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#e8e8e8;padding-top:5px;padding-bottom:10px;margin-bottom:15px}
+.c-rating {height:50px;width:50px;line-height:55px;text-align:center;font-weight:700;font-size:1.2em;background-image:url(images/star.png);clear:both;margin-top:5px;margin-bottom:5px;margin-left:auto;margin-right:auto}
+.d-list {border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#e8e8e8;padding-top:5px;padding-bottom:10px}
+.r-date {font-size:1.1em;padding-bottom:5px;margin-top:5px;float:left}
+.r-time {float:right;margin-left:10px;border-left:2px solid #e8e8e8;padding-left:10px}
+.m-info {font-weight:700;border-bottom:1px solid #e8e8e8}
+.my-rating-1, .my-rating-2, .my-rating-3, .my-rating-4 {overflow:hidden;padding-top:10px;padding-bottom:10px}
+.my-rating-1 .undone, .my-rating-1 .fade, .my-rating-2 .undone, .my-rating-2 .fade, .my-rating-3 .undone, .my-rating-3 .fade, .my-rating-4 .undone, .my-rating-4 .fade {background:url("images/star-small.png") -24px 0 no-repeat;width:22px;display:block;height:22px;float:left;margin-right:3px;text-indent:-99999px}
+.my-rating-1 .done, .my-rating-2 .done, .my-rating-3 .done, .my-rating-4 .done{background:url("images/star-small.png") no-repeat;width:20px;display:block;height:22px;float:left;margin-right:4px;text-indent:-99999px}
+.my-rating-1 .undone:hover, .my-rating-2 .undone:hover, .my-rating-3 .undone:hover, .my-rating-4 .undone:hover{background-position:0}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {width:88.35%;padding-left:2.325%;padding-right:2.325%;padding-top:2.325%}
+#m-layout {clear:both;float:left;margin-left:0;width:100%;display:block}
+.a-list {margin-bottom:25px}
+}
+
+@media only screen and (max-width: 480px) {
+.a-list {margin-bottom:35px}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {width:88.2%;max-width:1232px;padding-left:0.9%;padding-right:0.9%;margin:auto;padding-top:0.9%}
+#m-layout {clear:both;float:left;margin-left:0;width:100%;display:block}
+}
